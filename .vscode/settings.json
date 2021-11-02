@@ -1,5 +1,5 @@
 {
-    "azureFunctions.deploySubpath": "WatchPortalFunction",
+    "azureFunctions.deploySubpath": ".",
     "azureFunctions.postDeployTask": "npm install (functions)",
     "azureFunctions.projectLanguage": "JavaScript",
     "azureFunctions.projectRuntime": "~3",
