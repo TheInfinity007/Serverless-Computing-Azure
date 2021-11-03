@@ -12,6 +12,7 @@ module.exports = async function (context, req) {
   );
   const signature = hmac.update(JSON.stringify(req.body)).digest("hex");
   const shaSignature = `sha1=${signature}`;
+  context.log(shaSignature)
   const gitHubSignature = req.headers["x-hub-signature"];
 
   if (!shaSignature.localeCompare(gitHubSignature)) {
