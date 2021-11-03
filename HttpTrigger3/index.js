@@ -1,3 +1,5 @@
+const crypto = require('crypto');
+
 module.exports = async function (context, req) {
     context.log('JavaScript HTTP trigger function processed a request.');
     context.log('This function is created to test the GitHub Webhooks');
@@ -14,4 +16,4 @@ module.exports = async function (context, req) {
         };
     }
 
-}
+} 
