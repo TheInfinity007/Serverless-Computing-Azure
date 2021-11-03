@@ -4,7 +4,7 @@ module.exports = async function (context, req) {
 
     if(req.body.repository.name){
         context.res = {
-            body: `Repository is ${req.body.repository.name}, Event Type is ${req.headers.["X-GitHub-Event"]}`
+            body: `Repository is ${req.body.repository.name}, Event Type is ${req.headers["X-GitHub-Event"]}`
         }
     }else{
         const name = (req.query.name || (req.body && req.body.name));
