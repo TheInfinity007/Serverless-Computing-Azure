@@ -41,4 +41,4 @@ jobs:
           app-name: 'infinity-fxn'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_27CB3E9DE4E6458A9FDC4DEB963F3AD3 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1FBFA9669CB74E708051D392827FF7E8 }}
